@@ -1,0 +1,19 @@
+spring:
+  boot:
+    admin:
+      client:
+#        health-url: http://localhost:8080/health
+#        service-url: http://localhost:8080
+#        management-url: http://localhost:8080
+      url: http://localhost:8080
+      username: user
+      password: pass
+  application:
+    name: "@pom.artifactId@"
+server:
+  port: 8082
+
+#客户端访问敏感监控消息，需要关闭security校验
+management:
+  security:
+    enabled: false
